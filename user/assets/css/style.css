@@ -1,0 +1,347 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgb(205, 205, 205);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2984FF;
+}
+
+/* ---------------- */
+/* GOOGLE FONTS */
+/* ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* ---------------- */
+/* LOGIN CSS */
+/* ---------------- */
+
+.login-image {
+    background: url('/assets/img/login.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.input-login .input-login-form {
+    border: 2px solid #84b9ff;
+    border-radius: 2px;
+    text-align: start;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 1.2rem;
+    transition: .1s;
+}
+
+.input-login .input-login-form:focus {
+    outline: unset;
+    border: 2px solid #2984FF;
+}
+
+/* ---------------- */
+/* HEADER CSS */
+/* ---------------- */
+
+header nav {
+    height: 70px;
+    width: 100%;
+}
+
+/* for small screen */
+#hamburger-responsive {
+    margin-left: 0px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+#hamburger-responsive .hamburger-item {
+    width: 40px;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #3f3f3f;
+}
+
+#hamburger-responsive .hamburger-item:nth-child(2) {
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.hamburger-responsive-toggle {
+    margin-left: 220px !important;
+}
+
+/* for large screen */
+#hamburger {
+    margin-left: 220px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+#hamburger .hamburger-item {
+    width: 40px;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #3f3f3f;
+}
+
+#hamburger .hamburger-item:nth-child(2) {
+    margin: 5px;
+    margin-left: 10px;
+}
+
+/* ---------------- */
+/* SIDEBAR CSS */
+/* ---------------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-radius: 15px;
+    margin: 10px 0;
+    left: 0;
+    bottom: 0;
+    background-color: #8abafc;
+    width: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar .sidebar-link {
+    max-width: 120px;
+    word-break: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: relative;
+}
+
+.sidebar .sidebar-link::before {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    background-color: white;
+    height: 50px;
+    width: 140px;
+    z-index: -1;
+    top: 10;
+    left: -10;
+}
+
+.sidebar .sidebar-link:hover::before {
+    box-shadow: 1px 1px 5px #0000006b;
+}
+
+.sidebar-toggle {
+    left: -220px;
+}
+
+/* ---------------- */
+/* CONTENT CSS */
+/* ---------------- */
+
+main #content {
+    margin-left: 220px;
+    transition: 0.3s ease-in-out;
+    min-height: 80vh;
+    overflow: auto;
+    position: relative;
+    max-height: 0;
+}
+
+main #content table {
+    border: 2px solid black;
+    font-size: 1rem;
+    background-color: #EBEBEB;
+}
+
+main #content table th {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main #content table td {
+    font-weight: 600;
+}
+
+main #content table tr,
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+main #content table th,
+td {
+    padding: 8px 4px;
+}
+
+main #content .sign {
+    border: 2px solid black;
+    border-top: 0;
+    background-color: #EBEBEB;
+}
+
+main #content .sign .sign-line {
+    width: 180px;
+    height: 3px;
+    background: black;
+    margin-bottom: 20px;
+}
+
+main #content .sign .sign-1,
+.sign-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #content select {
+    border: 1px solid #519cff;
+}
+
+main #content select:focus {
+    outline: unset;
+}
+
+/* =============== */
+/* PROGRESS BAR CSS */
+/* ============== */
+
+.radialProgressBar {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    background: #ddd;
+    margin: 20px;
+    float: left;
+}
+
+.radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.radialProgressBar .overlay p {
+    font-size: 17px;
+}
+
+.progress-30 {
+    background-image: linear-gradient(-40deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #A50934 50%, #ddd 50%);
+}
+
+.progress-60 {
+    background-image: linear-gradient(90deg, #2381FF 50%, transparent 50%), linear-gradient(54deg, #2381FF 50%, #ddd 50%);
+}
+
+.progress-90 {
+    background-image: linear-gradient(90deg, #96FDF3 50%, transparent 50%), linear-gradient(-54deg, #96FDF3 50%, #ddd 50%);
+}
+
+.button-totals-div {
+    width: 610px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------- */
+/* color info */
+/* ---------------- */
+.color-info-head {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.color-info .color-info-item p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.color-info .color-info-item .box {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+}
+
+.color-info .color-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-info .color-info-item .stuck-off-color {
+    background-color: #C5DE9A;
+}
+
+.color-info .color-info-item .cease-color {
+    background-color: #363636;
+}
+
+.color-info .color-info-item .out-color {
+    background-color: #FE1400;
+}
+
+/* ---------------- */
+/* RESPONSIVE CSS */
+/* ---------------- */
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        left: -230px;
+    }
+
+    .sidebar-responsive-toggle {
+        left: 0px;
+    }
+
+    main #content {
+        margin-left: 0;
+        margin: 0 0.5rem;
+    }
+
+    #hamburger {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-totals-div {
+        width: 100%;
+    }
+
+    .color-info-head {
+        bottom: unset;
+    }
+}

@@ -1,0 +1,32 @@
+.fs-7 {
+    font-size: .9rem;
+}
+
+.min-h-100 {
+    min-height: 100vh !important;
+}
+
+.my-btn-outline-primary {
+    background: transparent;
+    padding: 4px 15px;
+    border: 2px solid #3c90ff;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.my-btn-outline-primary:active {
+    border: 2px solid rgb(169, 206, 255);
+}
+
+.my-text-primary {
+    color: #3f92ff;
+}
+
+.activate .sidebar-link::before {
+    box-shadow: 1px 1px 5px #0000006b;
+}
+
+.table-off {
+    color: #00bc35;
+    font-weight: 600;
+}
